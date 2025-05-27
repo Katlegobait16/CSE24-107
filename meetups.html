@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Car Collective - Events</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0b63b039da.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body style="background-color: #121212;">
+      <nav>
+        <a href="index.html"><img src="Images/logo2.png" alt="Car Collective Logo"></a>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="meetups.html">EVENTS</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+      </nav>
+
+      <section class="events-section">
+        <h2 style="text-align: center; padding-bottom:40px ;"><a href="upcomingevents.html" style="text-decoration: none; color: orange;">Upcoming Events</a></h2>
+        <div class="card-grid">
+          <a href="nightstreet.html" class="event-card">
+            <img src="Images/_ (5).jpeg" alt="Night Meet">
+            <h3>Night Street Meet</h3>
+            <p>May 18th, 2025 – Gaborone CBD Parking Deck. Show off your rides!</p>
+          </a>
+          <a href="trackdayshow.html" class="event-card">
+            <img src="Images/Sepang Qualifying.jpeg" alt="Track Day">
+            <h3>Track Day Showdown</h3>
+            <p>June 10th, 2025 – Francistown Raceway. Test your limits on the track.</p>
+          </a>
+        </div>
+            
+        <h2 style="text-align: center; padding-top: 40px; padding-bottom: 40px;"><a href="pastevents.html" style="text-decoration: none; color: orange;">Past Events</a></h2>
+        
+        <div class="card-grid">
+          <a href="summerslam.html" class="event-card">
+            <img src="Images/Amy Hitman • Aes.jpeg" alt="Previous Meet">
+            <h3>Summer Slam 2025</h3>
+            <p>A huge turnout with 200+ cars at the National Stadium lot.</p>
+          </a>
+                  
+          <a href="driftsession.html" class="event-card">
+            <img src="Images/drift.jpeg" alt="Drift Event">
+            <h3>Drift Session</h3>
+            <p>Drivers shredded tires at Molepolole open grounds in April 2025.</p>
+          </a>
+
+        </div>
+      </section>
+ 
+      <footer>
+                
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Car Collective</h3>
+            <p>The heart of the tuning community in Botswana. Passion. Power. People.</p>
+          </div>
+                    
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="meetups.html">Events</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+                    
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://x.com/i/flow/login?lang=en"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+                    
+        <div class="footer-bottom">
+          <p>© 2025 The Car Collective. Built for gearheads, by gearheads.</p>
+        </div>
+            
+      </footer>
+
+      <script>
+      document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav ul').classList.toggle('show');
+      });
+      </script>
+    </body>
+</html>

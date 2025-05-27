@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Car Collective - News</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0b63b039da.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #121212;">
+        <nav>
+            <a href="index.html"><img src="Images/logo2.png" alt="Car Collective Logo"></a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="meetups.html">EVENTS</a></li>
+                <li><a href="community.html">COMMUNITY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </nav>
+
+        <div class="news-main-content">
+            <section class="news-articles">
+                <h2 class="section-title">Trending Topics</h2>
+                <div class="card-grid">
+                  <a href="aprilmeet.html" class="news-card">
+                    <img src="Images/Petrolhead yobs show off doing doughnuts at crammed 500-strong undercover car meet on London’s streets despite lockdown.jpeg" alt="News Image: April Meet Recap">
+                    <h3>April Meet Recap</h3>
+                    <p>Over 150 cars showed up for April’s massive Gaborone night cruise!</p>
+                  </a>
+                  <a href="monthbuild.html" class="news-card">
+                    <img src="Images/RB26 Nissan 2_6 liter twin turbo intercooled inline 6 from GT-R Skyline.jpeg" alt="News Image: Build of the Month">
+                    <h3>Build of the Month</h3>
+                    <p>Check out Neo’s turbocharged GTI — our featured car for May!</p>
+                  </a>
+                  <a href="raceday.html" class="news-card">
+                    <img src="Images/6543c5de-52cd-4409-b8e8-23d007116f27.jpeg" alt="News Image: Race Day Results">
+                    <h3>Race Day Results</h3>
+                    <p>Track Day saw fierce competition. Here are the final standings.</p>
+                  </a>
+                </div>
+            </section>
+
+            <aside class="news-aside">
+                <h3>Latest Updates</h3>
+
+                <div class="member-spotlight-section">
+                    <h4 style="color: white;">Member Spotlight</h4>
+                    <div class="member-spotlight-card">
+                        <img src="Images/images (1).jpeg" alt="Member: Karabo Smith">
+                        <div>
+                            <h4>Karabo Smith</h4>
+                            <p>Our member Karabo recently finished his incredible Supra build!</p>
+                        </div>
+                    </div>
+                    <div class="member-spotlight-card">
+                        <img src="Images/v3_0957425.jpg" alt="Member: Tebogo Kingsley">
+                        <div>
+                            <h4>Tebogo Kingsley</h4>
+                            <p>Meet Tebogo, who organizes local classic car gatherings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-stories-section" style="margin-top: 2rem;">
+                    <h4 style="color: white;">Success Stories</h4>
+                    <div class="success-story-card">
+                        <img src="Images/v3_0282525.jpg" alt="Success Story 2">
+                        <div>
+                            <h4>From Hobbyist to Pro Racer</h4>
+                            <p>Meet the Motswana who turn her dream into reality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsletter-section">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p style="color: #ccc; font-size: 0.9rem;">Get the latest news and event updates directly to your inbox!</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+            
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Car Collective</h3>
+                    <p>The heart of the tuning community in Botswana. Passion. Power. People.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="meetups.html">Events</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/login.php/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/i/flow/login?lang=en"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="footer-bottom">
+                <p>© 2025 The Car Collective. Built for gearheads, by gearheads.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', () => {
+                document.querySelector('nav ul').classList.toggle('show');
+            });
+        </script>
+    </body>
+</html>

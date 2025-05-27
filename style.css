@@ -1,0 +1,605 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212; 
+  color: white; 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 1vw 8vw;
+  background-color: #1a1a1a; 
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav img {
+  width: 150px; 
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.show {
+  display: flex; 
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: darkorange;
+}
+
+article {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
+article h1{
+  font-size: 60px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+article h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  color: darkorange;
+}
+
+article p {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.learn-more-section, .events-section, .news-section, .community-section, .careers-section, .add-business-section, .event-detail-section, .gallery-section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.learn-more-title, .section-title {
+  text-align: center;
+  color: darkorange;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.learn-card, .event-card, .news-card, .profile-card {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-card:hover, .event-card:hover, .news-card:hover, .profile-card:hover {
+  transform: scale(1.03);
+  border-color: darkorange;
+}
+
+.learn-card img, .event-card img, .news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid olive;
+}
+
+.learn-card h3, .event-card h3, .news-card h3, .profile-card h3 {
+  color: olive;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.learn-card p, .event-card p, .news-card p, .profile-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  flex-grow: 1;
+}
+
+/* Login Box */
+.login-box {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 360px;
+  margin: 2rem auto;
+}
+
+.login-box h2 {
+  color: darkorange;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: olive;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="email"],
+.login-box textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.login-box button, .form-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: darkorange;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-box button:hover, .form-button:hover {
+  background-color: orange;
+}
+
+.event-detail-content {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.event-detail-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.event-detail-content h1 {
+  color: darkorange;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-detail-content h2 {
+  color: olive;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.event-detail-content p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.event-detail-content ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.event-detail-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.add-business-form {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.add-business-form label {
+  color: olive;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.add-business-form input[type="file"] {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.job-listing {
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.job-listing h3 {
+  color: darkorange;
+  margin-bottom: 0.5rem;
+}
+
+.job-listing p {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.job-listing a {
+  display: inline-block;
+  background-color: olive;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.job-listing a:hover {
+  background-color: darkolivegreen;
+}
+
+.news-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.news-articles {
+  flex: 3;
+  min-width: 60%;
+}
+
+.news-aside {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.news-aside h3 {
+  color: darkorange;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.member-spotlight-card, .success-story-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.member-spotlight-card img, .success-story-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid olive;
+}
+
+.member-spotlight-card h4, .success-story-card h4 {
+  color: olive;
+  margin-bottom: 0.2rem;
+}
+
+.member-spotlight-card p, .success-story-card p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.newsletter-section {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.newsletter-section h4 {
+  color: olive;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a3a3a;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: darkorange;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter-section button:hover {
+  background-color: orange;
+}
+
+/* Gallery Section Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  color: darkorange;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section h4 {
+  color: olive;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p, .footer-section a, .footer-bottom p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: darkorange;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav {
+    padding: 1vw 5vw; /* Adjusted padding for smaller screens */
+  }
+
+  nav img {
+    width: 100px; /* Adjusted logo size */
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger menu */
+  }
+
+  .home h1 {
+    font-size: 60px;
+  }
+
+  article h2 {
+    font-size: 30px;
+  }
+
+  article p {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+  }
+
+  .news-main-content {
+    flex-direction: column;
+  }
+
+  .news-articles, .news-aside {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .login-box, .add-business-form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 1vw 5vw;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  .home h1 {
+    font-size: 45px;
+  }
+
+  article h2 {
+    font-size: 25px;
+  }
+
+  article p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .learn-card, .event-card, .news-card, .profile-card {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section ul {
+    display: inline-block;
+  }
+}

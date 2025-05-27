@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Collective - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box; 
+    }
+
+    .login-box {
+      background-color: #1a1a1a;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 400px; 
+      border: 1px solid rgba(255, 215, 0, 0.1); 
+    }
+
+    h2 {
+      color: darkorange; 
+      text-align: center;
+      margin-bottom: 2rem; 
+      font-weight: 700; 
+      font-size: 2.2rem; 
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.6rem; 
+      color: #bbbbbb; 
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 1.5rem); 
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #3a3a3a; 
+      border-radius: 8px;
+      background-color: #2a2a2a;
+      color: white;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none; 
+      border-color: darkorange; 
+      box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3); 
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9rem; 
+      background-color: darkorange; 
+      border: none;
+      border-radius: 8px;
+      color: #1a1a1a; 
+      font-weight: 700; 
+      font-size: 1.1rem; 
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; 
+      letter-spacing: 0.5px;
+    }
+
+    button:hover {
+      background-color: #e0ac00; 
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      transform: translateY(0); 
+      background-color: #c49600; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Car Collective Login</h2> <form action="index.html" method="get"> <label for="username">Username</label>
+      <input type="text" id="username" name="username" required autocomplete="username" /> <label for="password">Password</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password" /> <button type="submit">Sign In</button> </form>
+  </div>
+
+</body>
+</html>
